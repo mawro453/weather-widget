@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Local Weather</title>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div class="container">
+      <div class="card mx-auto mb-3 main-card">
+
+        <!-- HEADER -->
+        <h4 class="card-header">
+          <span id="city-now"></span>
+          <span id="time-now"></span>
+        </h4>
+
+        <!-- TODAYS DATA -->
+        <div class="card-body">
+          <div class="row">
+            <div class="col-7 text-center">
+              <p id="desc-now"></p>
+              <div class="row py-24 justify-content-center">
+                <div class="col-auto pr-6">
+                  <i id="icon-now" class="wi wi-day-sunny"></i>
+                </div>
+                <div class="col-auto pl-6">
+                  <p id="temp-now"></p>
+                  <p id="celsius-now" class="degree degree-active">°C</p>
+                  <p class="degree mx-1">|</p>
+                  <p id="fahrenheit-now" class="degree degree-inactive">°F</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 data-tables">
+              <table class="text-center">
+                <tr>
+                  <td><i class="wi wi-strong-wind p-6"></i></td>
+                  <td class="text-left">Wind: <span id="wind-now"></span></td>
+                </tr>
+                <tr>
+                  <td><i class="wi wi-humidity p-6"></i></td>
+                  <td class="text-left">Humidity: <span id="humidity-now"></span> %</td>
+                </tr>
+                <tr class="spaceUnder">
+                  <td><i class="wi wi-cloudy p-6"></i></td>
+                  <td class="text-left">Cloudiness: <span id="cloudiness-now"></span> %</td>
+                </tr>
+                <tr>
+                  <td><i class="wi wi-sunrise p-6"></i></td>
+                  <td class="text-left">Sunrise: <span id="sunrise-now"></span></td>
+                </tr>
+                <tr>
+                  <td><i class="wi wi-sunset p-6"></i></td>
+                  <td class="text-left">Sunset: <span id="sunset-now"></span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORECAST -->
+        <div class="row card-img-bottom ml-0 text-center">
+          <div id="first-day" class="col forecast-col">
+            <h3>MON</h3>
+            <p><span>1°</span> <span class="blue-text">-1°</span></p>
+          </div>
+          <div id="second-day" class="col forecast-col">
+            <h3>TUE</h3>
+            <p><span>1°</span> <span class="blue-text">-1°</span></p>
+          </div>
+          <div id="third-day" class="col forecast-col">
+            <h3>WED</h3>
+            <p><span>1°</span> <span class="blue-text">-1°</span></p>
+          </div>
+          <div id="forth-day" class="col forecast-col">
+            <h3>FRI</h3>
+            <p><span>1°</span> <span class="blue-text">-1°</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <p id="attribution-text">Weather data by <a href="https://openweathermap.org">OpenWeatherMap</a></p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="https://github.com/mwrod/" target="_blank">
+        <i class="fab fa-github i-big"></i>
+        <span>by Martin Wrodarczyk</span>
+      </a>
+    </footer>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="bundle.js"></script>
+</body>
+</html
