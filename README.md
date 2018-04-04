@@ -12,7 +12,7 @@ Live Preview: <https://mwrod.github.io/weather-widget/>
 
 ## Preview
 
-[![Preview](preview.png?raw=true)](https://mwrod.github.io/random-quotes/)
+[![Preview](preview.png?raw=true)](https://mwrod.github.io/weather-widget/)
 
 
 ## License
